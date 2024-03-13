@@ -1,18 +1,10 @@
-let personName : string = '';
+let personName: string ='';
 
- personName = prompt('Whar is your name?')|| '';
-
-let lowercase : string = personName.toLowerCase();
-let uppercase : string = personName.toUpperCase();
-let titlecase : string = personName.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1).
-toLowerCase()).join(' ')
+personName = prompt('what is your name?') || '';
 
 if(personName !== null && personName !==''){
-    alert(`Hello ${personName}, Here are your name in:
-    lowercase: ${lowercase}
-    upppercase: ${uppercase}
-    Titlecase:${titlecase}`)
+    alert(`Hello ${personName}, would you like to learnsome python today?`)
 }
 else{
-    alert('please fill your name !')
+    alert('You Have to fill your name !')   
 }
