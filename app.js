@@ -1,9 +1,16 @@
 "use strict";
 let personName = '';
-personName = prompt('what is your name?') || '';
+personName = prompt('Whar is your name?') || '';
+let lowercase = personName.toLowerCase();
+let uppercase = personName.toUpperCase();
+let titlecase = personName.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1).
+    toLowerCase()).join(' ');
 if (personName !== null && personName !== '') {
-    alert(`Hello ${personName}, would you like to learnsome python today?`);
+    alert(`Hello ${personName}, Here are your name in:
+    lowercase: ${lowercase}
+    upppercase: ${uppercase}
+    Titlecase:${titlecase}`);
 }
 else {
-    alert('You Have to fill your name !');
+    alert('please fill your name !');
 }
